@@ -10,6 +10,30 @@
 
 
 
+
+/*--------------
+     LAYOUT
+---------------*/
+body {
+    background-color: lightgray;
+}
+
+.container {
+    max-width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    flex-grow: 1;
+}
+
+
 /*--------------
       HEADER
 ---------------*/
@@ -23,4 +47,52 @@ header {
     top: 0;
     left: 0;
     z-index: 10;
+}
+
+/*------------
+     MAIN
+-------------*/
+main {
+    padding: 26px
+}
+
+.intro h2 {
+margin-top: 12px;
+margin-bottom: 12px;
+}
+
+.intro h2 > span {
+    display: none;
+}
+
+h4 {
+    color: grey;
+}
+
+.intro .col-video, 
+.intro .col-details {
+    width: 100%;
+}
+
+/*--------------
+   RESPONSIVE
+--------------*/
+/*   TABLET    */
+@media screen and (min-width: 768px) {
+    header {
+        text-align: left;
+    }
+    .intro h2 > span {
+        display: inline;
+    }
+}
+
+/*    DESKTOP   */
+@media screen and (min-width: 992px) {
+    .intro .col-video {
+        width: 70%;
+    }
+    .intro .col-details {
+        width: 30%;
+    }
 }
