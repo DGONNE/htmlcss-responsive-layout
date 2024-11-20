@@ -1,7 +1,11 @@
 /*--------------
     RESET
 --------------*/
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 
 /*--------------
@@ -33,7 +37,13 @@ body {
     flex-grow: 1;
 }
 
+.img-fluid {
+    max-width: 100%;
+}
 
+footer {
+    background-color: blueviolet;
+}
 /*--------------
       HEADER
 ---------------*/
@@ -72,6 +82,14 @@ h4 {
 .intro .col-video, 
 .intro .col-details {
     width: 100%;
+}
+
+.presentation h2 {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.col-img {
+    padding: 0 24px;
 }
 
 /*--------------
